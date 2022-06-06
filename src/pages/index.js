@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Link, graphql } from "gatsby";
-import bla from "../images/annaPhoto.png";
 
 import Bio from "../components/bio";
 import Layout from "../components/layout";
@@ -52,10 +51,10 @@ const BlogIndex = ({ data, location }) => {
                     className="bio-avatar"
                     layout="fixed"
                     formats={["auto", "webp", "avif"]}
-                    src="../images/annaPhoto.png"
-                    width={50}
-                    height={50}
-                    quality={95}
+                    src="../images/city.jpg"
+                    width={800}
+                    height={900}
+                    quality={100}
                     alt="Profile picture"
                   />
                   <p
