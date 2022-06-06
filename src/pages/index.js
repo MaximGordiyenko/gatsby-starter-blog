@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link, graphql } from "gatsby";
-import bla from "../images/bla.png";
+import bla from "../images/annaPhoto.png";
 
 import Bio from "../components/bio";
 import Layout from "../components/layout";
