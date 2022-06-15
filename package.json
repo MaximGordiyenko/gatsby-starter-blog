@@ -8,7 +8,9 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "gatsby": "^4.15.2",
+    "gatsby-image": "^3.11.0",
     "gatsby-plugin-feed": "^4.15.1",
     "gatsby-plugin-gatsby-cloud": "^4.15.0",
     "gatsby-plugin-google-analytics": "^4.15.0",
@@ -29,6 +31,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
+    "react-image-webp": "^0.8.0",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75"
   },
@@ -45,7 +48,7 @@
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
-    "build": "gatsby build",
+    "build": "cross-env GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
